@@ -33,6 +33,14 @@
 .nav-title {
     display: flex;
 }
+#bars{
+    visibility: hidden;
+    color: #131318;
+    position: relative;
+    left: 50px;
+    top: 18px;
+    font-size: 20px;
+}
 
 .nav-title h2 {
     color: #131318;
@@ -182,6 +190,7 @@
 .destination {
     max-width: 1440px;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 .destination-images img {
@@ -189,43 +198,98 @@
 }
 
 .destination-images {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-
-
-}
-
-.mald {
-    grid-area: 1 / 1 / 5 / 7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
 
 }
 
-.ind {
-    grid-area: 1 / 7 / 5 / 13;
-
+.destination-title h2 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
 }
 
-.sri {
-    grid-area: 5 / 1 / 9 / 4;
+.destination-title p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
-.na {
-    grid-area: 5 / 5 / 9 / 13;
+.mald h4 {
+    position: relative;
+    bottom: 155px;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
 }
 
-.kas {
-    grid-area: 5 / 10 / 9 / 10;
+.ind h4 {
+    position: relative;
+    bottom: 155px;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
 }
 
-.ban {
-    grid-area: 9 / 1 / 13 / 5;
+.sri h4 {
+    position: relative;
+    bottom: 155px;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
 }
 
-.band {
-    grid-area: 9 / 6 / 13 / 13;
+.na h4 {
+    position: relative;
+    bottom: 155px;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.kas h4 {
+    position: relative;
+    bottom: 155px;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.ban h4 {
+    position: relative;
+    bottom: 155px;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.band h4 {
+    position: relative;
+    bottom: 155px;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
 }
 
 
@@ -341,6 +405,38 @@
     padding-right: 20px;
 }
 
+/* consultant section style */
+.Consultant{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display:flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+.consultant-image img{
+    width: 100%;
+}
+
+.consultant-content{
+    text-align: center;
+    max-width: 740px;
+}
+.consultant-content h2{
+    color: #131318;
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 110px;
+}
+.consultant-content p{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
 
 /* newsletter section styles */
 
@@ -350,13 +446,18 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
+    align-items: center;
 }
 
 .newsletter-form {
     border: 1px solid #FF5400;
     border-radius: 16px;
-    width: 474px;
-    height: 422px;
+    height: 400px;
+}
+
+.newsletter-image{
+    position: relative;
+    top: 55px;
 }
 
 .newsletter-form h2 {
@@ -410,8 +511,7 @@
 }
 
 .newsletter-image img {
-    width: 670px;
-    height: 420px;
+    width: 100%;
 }
 
 
@@ -447,10 +547,10 @@
 .footer {
     background: rgba(19, 19, 24, 0.05);
     text-align: center;
-    height:500px;
+    height: 500px;
 }
 
-.footer-container{
+.footer-container {
     padding-top: 100px;
 }
 
@@ -473,7 +573,7 @@
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
-    padding-top:15px;
+    padding-top: 15px;
     padding-bottom: 35px;
 
 }
@@ -517,6 +617,11 @@
 @media screen and (max-width:600px) {
     .nav-content {
         display: none;
+
+    }
+
+    #bars{
+        visibility: visible;
     }
 
     .banner {
@@ -587,6 +692,16 @@
         margin: 15px;
     }
 
+
+    .Consultant{
+        flex-direction: column;
+        margin: 15px;
+    }
+    .consultant-content h2{
+        padding-top: 20px;
+    }
+
+
     .choose-title {
         margin: 15px;
     }
@@ -594,8 +709,7 @@
     .newsletter {
         flex-direction: column;
         margin: 15px;
-        width: 375px;
-        gap: 15px;
+        margin-top: 30px;
     }
 
     .newsletter-image img {
@@ -603,7 +717,7 @@
     }
 
     .newsletter-image {
-        margin-right: 20px;
+        height: 315px;
     }
 
     .newsletter-form {
@@ -638,19 +752,60 @@
 
     }
 
-    .footer{
+    .footer {
         height: 400px;
     }
 
     .image-sticker {
-        left: 25px;
+        left: 30px;
     }
 
     .footer h1 {
         padding-top: 20px;
     }
 
-    .logos{
+    .footer hr {
+        width: 280px;
+    }
+
+    .logos {
         margin-bottom: 20px;
+    }
+
+    .destination-images {
+        gap: 10px;
+    }
+
+    .destination {
+        margin: 15px;
+    }
+
+    .mald h4 {
+        bottom: 130px;
+    }
+
+    .ind h4 {
+        bottom: 130px;
+    }
+
+    .sri h4 {
+        bottom: 140px;
+    }
+
+    .na h4 {
+        bottom: 130px;
+    }
+
+    .kas h4 {
+        bottom: 150px;
+    }
+
+    .ban h4 {
+        bottom: 130px;
+    }
+
+    .band h4 {
+        bottom: 100px;
+
     }
 }
