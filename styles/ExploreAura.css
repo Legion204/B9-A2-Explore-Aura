@@ -429,18 +429,79 @@
 .image-sticker p {
     color: #FFF;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
-    padding-top:15px ;
+    padding-top: 15px;
 }
 
-.image-sticker {
+.image-sticker h3 {
     color: #FFF;
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
 }
 
+
+/* footer styles */
+
+.footer {
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    height:500px;
+}
+
+.footer-container{
+    padding-top: 100px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo h2 {
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+    margin-left: 15px;
+}
+
+.footer-description {
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top:15px;
+    padding-bottom: 35px;
+
+}
+
+.logos {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.footer hr {
+    background: rgba(19, 19, 24, 0.10);
+    width: 872px;
+    height: 1px;
+    border: none;
+    margin: 0 auto;
+}
+
+.footer h1 {
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 50px;
+}
 
 
 
@@ -530,41 +591,46 @@
         margin: 15px;
     }
 
-    .newsletter{
+    .newsletter {
         flex-direction: column;
         margin: 15px;
         width: 375px;
         gap: 15px;
     }
 
-    .newsletter-image img{
+    .newsletter-image img {
         width: 100%;
     }
-    .newsletter-image{
+
+    .newsletter-image {
         margin-right: 20px;
     }
 
-    .newsletter-form{
+    .newsletter-form {
         width: 355px;
     }
-    .newsletter-form h2{
+
+    .newsletter-form h2 {
         margin: 25px;
     }
-    .newsletter-form p{
+
+    .newsletter-form p {
         margin-left: 25px;
         margin-right: 45px;
     }
-    .newsletter-form hr{
+
+    .newsletter-form hr {
         width: 10px;
     }
 
-    .newsletter-inputs input{
+    .newsletter-inputs input {
         width: 290px;
         height: 50px;
         margin-left: 25px;
         margin-right: 25px;
     }
-    #subscribe-btn{
+
+    #subscribe-btn {
         width: 310px;
         height: 50px;
         margin-left: 25px;
@@ -572,7 +638,19 @@
 
     }
 
-    .image-sticker{
+    .footer{
+        height: 400px;
+    }
+
+    .image-sticker {
         left: 25px;
+    }
+
+    .footer h1 {
+        padding-top: 20px;
+    }
+
+    .logos{
+        margin-bottom: 20px;
     }
 }
