@@ -33,7 +33,8 @@
 .nav-title {
     display: flex;
 }
-#bars{
+
+#bars {
     visibility: hidden;
     color: #131318;
     position: relative;
@@ -292,6 +293,34 @@
     font-weight: 800;
 }
 
+.mald {
+    margin-bottom: -30px;
+}
+
+.ind {
+    margin-bottom: -30px;
+}
+
+.sri {
+    margin-bottom: -30px;
+}
+
+.na {
+    margin-bottom: -30px;
+}
+
+.kas {
+    margin-bottom: -30px;
+}
+
+.ban {
+    margin-bottom: -30px;
+}
+
+.band {
+    margin-bottom: -30px;
+}
+
 
 /* choose section styles */
 
@@ -406,36 +435,43 @@
 }
 
 /* consultant section style */
-.Consultant{
+.Consultant {
     max-width: 1440px;
     margin: 0 auto;
     margin-top: 100px;
-    display:flex;
-    justify-content: space-between;
-    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.consultant-image img{
+.consultant-image img {
     width: 100%;
+    border-radius: 16px;
 }
 
-.consultant-content{
+.consultant-content {
     text-align: center;
     max-width: 740px;
+    background-color: aliceblue;
+    border-radius: 16px;
 }
-.consultant-content h2{
+
+.consultant-content h2 {
     color: #131318;
     font-size: 30px;
     font-weight: 800;
     padding-top: 110px;
 }
-.consultant-content p{
+
+.consultant-content p {
     color: #5A5A5D;
     font-size: 16px;
     font-weight: 400;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
+    padding: 20px;
+
+}
+
+#find-expert{
+    margin-bottom: 15px;
 }
 
 /* newsletter section styles */
@@ -455,7 +491,7 @@
     height: 400px;
 }
 
-.newsletter-image{
+.newsletter-image {
     position: relative;
     top: 55px;
 }
@@ -518,26 +554,25 @@
 .image-sticker {
     border-radius: 16px;
     background: #FF5400;
-    width: 324px;
-    height: 120px;
+    bottom: 145px;
+    left: 435px;
+    max-width: 230px;
     transform: rotate(-19.628deg);
     position: relative;
-    bottom: 170px;
-    left: 340px;
+    
 }
 
 .image-sticker p {
     color: #FFF;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 400;
-    padding-top: 15px;
 }
 
 .image-sticker h3 {
     color: #FFF;
     text-align: center;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 800;
 }
 
@@ -620,7 +655,7 @@
 
     }
 
-    #bars{
+    #bars {
         visibility: visible;
     }
 
@@ -649,7 +684,7 @@
 
     .banner-inputs {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         margin: 0px 60px;
         padding: 10px;
         align-items: center;
@@ -693,11 +728,13 @@
     }
 
 
-    .Consultant{
+    .Consultant {
         flex-direction: column;
         margin: 15px;
+        gap: 15px;
     }
-    .consultant-content h2{
+
+    .consultant-content h2 {
         padding-top: 20px;
     }
 
@@ -716,8 +753,8 @@
         width: 100%;
     }
 
-    .newsletter-image {
-        height: 315px;
+    .image-sticker {
+        left: 120px;
     }
 
     .newsletter-form {
@@ -756,9 +793,6 @@
         height: 400px;
     }
 
-    .image-sticker {
-        left: 30px;
-    }
 
     .footer h1 {
         padding-top: 20px;
@@ -781,11 +815,11 @@
     }
 
     .mald h4 {
-        bottom: 130px;
+        bottom: 115px;
     }
 
     .ind h4 {
-        bottom: 130px;
+        bottom: 120px;
     }
 
     .sri h4 {
@@ -797,7 +831,7 @@
     }
 
     .kas h4 {
-        bottom: 150px;
+        bottom: 190px;
     }
 
     .ban h4 {
@@ -808,10 +842,12 @@
         bottom: 100px;
 
     }
+
+    #kasimg{
+        width: 355px;
+    }
 }
 
 /* large device responsive */
 
-@media screen and (min-width:992px) {
-    
-}
+@media screen and (min-width:992px) {}
