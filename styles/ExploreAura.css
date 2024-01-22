@@ -650,6 +650,9 @@
 /* mobile devices */
 
 @media screen and (max-width:600px) {
+    .nav-container{
+        margin-left: 10px;
+    }
     .nav-content {
         display: none;
 
